@@ -4,7 +4,7 @@ ksmps = 1
 nchnls = 1
 
 instr 6; simple output
-   acar soundin "nato.small.wav"
+   acar soundin "resampled.wav"
    
    out acar
 endin
@@ -17,7 +17,7 @@ instr 1 ; 5 band vocoder - geometric bands
 	itablec		= p7 ; which waveform to use for the oscillators
 	ibandadj    = p8 ; an adjustment factor to make smaller-width bands
 	
-	acar soundin "nato.small.wav"
+	acar soundin "resampled.wav"
 	
 	; determine the frequency bands
 	
